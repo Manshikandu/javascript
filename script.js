@@ -5,11 +5,16 @@ function validation(){
     var name = document.getElementById('name').value;
     var address = document.getElementById('address').value;
     if(name==''){
-       alert('name is required');
+       //alert('name is required');
+       
+       
+       document.getElementById('nameErr').innerHTML='Name is required'
        document.getElementById('name').focus();
     }
     if(address==''){
-        alert('Address is required');
+        document.getElementById('addressErr').innerHTML='Address is required'
+        //alert('Address is required');
+        
     }
 
 }
